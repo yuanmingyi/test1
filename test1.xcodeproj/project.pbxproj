@@ -14,7 +14,14 @@
 		BE700B3F15727525001296C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE700B3E15727525001296C0 /* main.m */; };
 		BE700B4315727525001296C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE700B4215727525001296C0 /* AppDelegate.m */; };
 		BE700B4615727525001296C0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE700B4415727525001296C0 /* MainStoryboard.storyboard */; };
-		BE700B4915727525001296C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE700B4815727525001296C0 /* ViewController.m */; };
+		BE700B521572843A001296C0 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE700B511572843A001296C0 /* ImageIO.framework */; };
+		BE700B5A1572944D001296C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE700B591572944D001296C0 /* AVFoundation.framework */; };
+		BE700B5E15729586001296C0 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE700B5D15729586001296C0 /* CoreVideo.framework */; };
+		BE700B60157295C5001296C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE700B5F157295C5001296C0 /* CoreMedia.framework */; };
+		BE700B6215735D32001296C0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE700B4815727525001296C0 /* ViewController.m */; };
+		BE700B6415737A84001296C0 /* tick.aiff in Resources */ = {isa = PBXBuildFile; fileRef = BE700B6315737A84001296C0 /* tick.aiff */; };
+		BE700B69157402CD001296C0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE700B68157402CD001296C0 /* AudioToolbox.framework */; };
+		BE700B6E15740427001296C0 /* 222.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BE700B6D15740427001296C0 /* 222.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,15 +29,22 @@
 		BE700B3215727525001296C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE700B3415727525001296C0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BE700B3615727525001296C0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		BE700B3A15727525001296C0 /* test1-Info.plist */ = {isa = PBXFileReference; path = "test1-Info.plist"; sourceTree = "<group>"; };
+		BE700B3A15727525001296C0 /* test1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "test1-Info.plist"; sourceTree = "<group>"; };
 		BE700B3C15727525001296C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BE700B3E15727525001296C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BE700B4015727525001296C0 /* test1-Prefix.pch */ = {isa = PBXFileReference; path = "test1-Prefix.pch"; sourceTree = "<group>"; };
-		BE700B4115727525001296C0 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE700B4015727525001296C0 /* test1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test1-Prefix.pch"; sourceTree = "<group>"; };
+		BE700B4115727525001296C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BE700B4215727525001296C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BE700B4515727525001296C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BE700B4715727525001296C0 /* ViewController.h */ = {isa = PBXFileReference; path = ViewController.h; sourceTree = "<group>"; };
+		BE700B4715727525001296C0 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		BE700B4815727525001296C0 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BE700B511572843A001296C0 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BE700B591572944D001296C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BE700B5D15729586001296C0 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BE700B5F157295C5001296C0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BE700B6315737A84001296C0 /* tick.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = tick.aiff; sourceTree = "<group>"; };
+		BE700B68157402CD001296C0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		BE700B6D15740427001296C0 /* 222.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 222.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +52,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE700B69157402CD001296C0 /* AudioToolbox.framework in Frameworks */,
+				BE700B60157295C5001296C0 /* CoreMedia.framework in Frameworks */,
+				BE700B5E15729586001296C0 /* CoreVideo.framework in Frameworks */,
+				BE700B5A1572944D001296C0 /* AVFoundation.framework in Frameworks */,
+				BE700B521572843A001296C0 /* ImageIO.framework in Frameworks */,
 				BE700B3315727525001296C0 /* UIKit.framework in Frameworks */,
 				BE700B3515727525001296C0 /* Foundation.framework in Frameworks */,
 				BE700B3715727525001296C0 /* CoreGraphics.framework in Frameworks */,
@@ -67,6 +86,11 @@
 		BE700B3115727525001296C0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE700B68157402CD001296C0 /* AudioToolbox.framework */,
+				BE700B5F157295C5001296C0 /* CoreMedia.framework */,
+				BE700B5D15729586001296C0 /* CoreVideo.framework */,
+				BE700B591572944D001296C0 /* AVFoundation.framework */,
+				BE700B511572843A001296C0 /* ImageIO.framework */,
 				BE700B3215727525001296C0 /* UIKit.framework */,
 				BE700B3415727525001296C0 /* Foundation.framework */,
 				BE700B3615727525001296C0 /* CoreGraphics.framework */,
@@ -77,6 +101,8 @@
 		BE700B3815727525001296C0 /* test1 */ = {
 			isa = PBXGroup;
 			children = (
+				BE700B6C15740427001296C0 /* photos */,
+				BE700B6315737A84001296C0 /* tick.aiff */,
 				BE700B4115727525001296C0 /* AppDelegate.h */,
 				BE700B4215727525001296C0 /* AppDelegate.m */,
 				BE700B4415727525001296C0 /* MainStoryboard.storyboard */,
@@ -96,6 +122,14 @@
 				BE700B4015727525001296C0 /* test1-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE700B6C15740427001296C0 /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				BE700B6D15740427001296C0 /* 222.jpg */,
+			);
+			path = photos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +184,8 @@
 			files = (
 				BE700B3D15727525001296C0 /* InfoPlist.strings in Resources */,
 				BE700B4615727525001296C0 /* MainStoryboard.storyboard in Resources */,
+				BE700B6415737A84001296C0 /* tick.aiff in Resources */,
+				BE700B6E15740427001296C0 /* 222.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +198,7 @@
 			files = (
 				BE700B3F15727525001296C0 /* main.m in Sources */,
 				BE700B4315727525001296C0 /* AppDelegate.m in Sources */,
-				BE700B4915727525001296C0 /* ViewController.m in Sources */,
+				BE700B6215735D32001296C0 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,9 +274,20 @@
 		BE700B4D15727525001296C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test1/test1-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/millan/opencv2.4.0/build/include;
 				INFOPLIST_FILE = "test1/test1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = /Users/millan/opencv2.4.0/build/lib/Debug;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-lopencv_highgui",
+					"-lopencv_core",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -249,9 +296,20 @@
 		BE700B4E15727525001296C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "test1/test1-Prefix.pch";
+				HEADER_SEARCH_PATHS = /Users/millan/opencv2.4.0/build/include;
 				INFOPLIST_FILE = "test1/test1-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = /Users/millan/opencv2.4.0/build/lib/Release;
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-lz",
+					"-lopencv_highgui",
+					"-lopencv_core",
+					"-lopencv_imgproc",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -1,24 +1,178 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1906" systemVersion="11A511" targetRuntime="iOS.CocoaTouch.iPad" nextObjectID="6" propertyAccessControl="none" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11E53" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
     <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
         <development defaultVersion="4200" identifier="xcode"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="902"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
     </dependencies>
     <scenes>
+        <!--View Controller-->
         <scene sceneID="4">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
                 <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5">
+                    <view key="view" contentMode="scaleToFill" id="7fQ-GB-T1a">
                         <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews/>
+                        <subviews>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="Zud-QA-JPr" userLabel="camera view">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="26J-nC-50I" userLabel="background view">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" id="QFr-Ts-fGO" userLabel="flip view">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="xaK-lm-eeJ" userLabel="main view">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                    <view opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="P4A-Dj-D4W" userLabel="control bar">
+                                        <rect key="frame" x="0.0" y="964" width="768" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <subviews>
+                                            <stepper clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" id="D89-yx-bek" userLabel="page control">
+                                                <rect key="frame" x="654" y="7" width="94" height="27"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                                <connections>
+                                                    <action selector="flipPage:" destination="2" eventType="valueChanged" id="QbU-3p-hOk"/>
+                                                </connections>
+                                            </stepper>
+                                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="center" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="WhB-Nx-Dwg" userLabel="photo num label">
+                                                <rect key="frame" x="593" y="10" width="42" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="L4E-Xj-YtZ" userLabel="delete">
+                                                <rect key="frame" x="18" y="2" width="72" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Delete">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteImage:" destination="2" eventType="touchUpInside" id="CKC-Sq-fKh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HwL-ca-UMf" userLabel="save">
+                                                <rect key="frame" x="98" y="2" width="72" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                <state key="normal" title="Save">
+                                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <state key="highlighted">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="saveImage:" destination="2" eventType="touchUpInside" id="BBH-jg-o3o"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="center" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="9SX-2z-ndE" userLabel="message label">
+                                <rect key="frame" x="284" y="487" width="200" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kbv-zm-zJC" appends="YES" id="4f1-Yr-POe"/>
+                            <outletCollection property="gestureRecognizers" destination="2ig-eQ-LqQ" appends="YES" id="sJw-20-CM5"/>
+                            <outletCollection property="gestureRecognizers" destination="04a-g7-y3f" appends="YES" id="sx9-2d-28D"/>
+                            <outletCollection property="gestureRecognizers" destination="e5F-J6-bdD" appends="YES" id="z2l-Ep-cJ8"/>
+                            <outletCollection property="gestureRecognizers" destination="QF1-Eo-WY1" appends="YES" id="WpZ-Uh-lOO"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="26J-nC-50I" id="iJB-Vs-j7o"/>
+                        <outlet property="cameraView" destination="Zud-QA-JPr" id="C9Q-4H-ECT"/>
+                        <outlet property="controlBar" destination="P4A-Dj-D4W" id="50A-JW-CkF"/>
+                        <outlet property="deleteButton" destination="L4E-Xj-YtZ" id="lHM-Hb-w6a"/>
+                        <outlet property="flipView" destination="QFr-Ts-fGO" id="GTB-8M-xGI"/>
+                        <outlet property="mainView" destination="xaK-lm-eeJ" id="869-d9-7bz"/>
+                        <outlet property="messageLabel" destination="9SX-2z-ndE" id="kh1-s7-G9J"/>
+                        <outlet property="pageControl" destination="D89-yx-bek" id="VoX-FL-2oS"/>
+                        <outlet property="pageLabel" destination="WhB-Nx-Dwg" id="bBa-8Q-duk"/>
+                        <outlet property="saveButton" destination="HwL-ca-UMf" id="nZ4-ui-UoJ"/>
+                        <outlet property="tapGesture" destination="kbv-zm-zJC" id="IkW-FX-qYu"/>
+                    </connections>
                 </viewController>
+                <tapGestureRecognizer id="kbv-zm-zJC">
+                    <connections>
+                        <action selector="tapResponder:" destination="2" id="uvY-LL-gHF"/>
+                        <outlet property="delegate" destination="2" id="nOV-yG-ZLr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <swipeGestureRecognizer direction="up" id="2ig-eQ-LqQ" userLabel="Up Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeResponder:" destination="2" id="VnI-Zu-rXs"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="04a-g7-y3f" userLabel="Down Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeResponder:" destination="2" id="yfm-SH-Wgf"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="e5F-J6-bdD" userLabel="Left Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeResponder:" destination="2" id="nUH-2H-JYJ"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="QF1-Eo-WY1" userLabel="Right Swipe Gesture Recognizer">
+                    <connections>
+                        <action selector="swipeResponder:" destination="2" id="exS-WS-uCu"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
         </scene>
     </scenes>
+    <classes>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="deleteImage:"/>
+                <relationship kind="action" name="flipPage:"/>
+                <relationship kind="action" name="saveImage:"/>
+                <relationship kind="action" name="swipeResponder:" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="action" name="tapResponder:" candidateClass="UITapGestureRecognizer"/>
+                <relationship kind="outlet" name="backgroundView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="cameraView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="controlBar" candidateClass="UIView"/>
+                <relationship kind="outlet" name="deleteButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="flipView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mainView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="messageLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="pageLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="saveButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="tapGesture" candidateClass="UITapGestureRecognizer"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
